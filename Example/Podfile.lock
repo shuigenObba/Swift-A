@@ -1,0 +1,18 @@
+PODS:
+  - Swift-A (1.0.0):
+    - Swift-A/Source (= 1.0.0)
+  - Swift-A/Source (1.0.0)
+
+DEPENDENCIES:
+  - Swift-A (from `../`)
+
+EXTERNAL SOURCES:
+  Swift-A:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Swift-A: 4f47949a45ec7489e17166126c41d3aefc349cdc
+
+PODFILE CHECKSUM: 3c1fce708194d132ce5d97e604dc6c2c548bb29b
+
+COCOAPODS: 1.3.1

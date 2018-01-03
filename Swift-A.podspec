@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Swift-A'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of Swift-A.'
+  s.version          = '1.0.0'
+  s.summary          = '收集一些可用的常用方法，方便以后集成，可直接使用'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -24,19 +24,14 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/huangshuigen/Swift-A'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'huangshuigen' => 'huangshuigen@sefon.com' }
+  s.author           = { 'huangshuigen' => 'huangshuigenoppa@163.com' }
   s.source           = { :git => 'https://github.com/huangshuigen/Swift-A.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
-  s.source_files = 'Swift-A/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'Swift-A' => ['Swift-A/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'Source' do |ss|
+    ss.source_files = 'Swift-A/Source/Core', 'Swift-A/Source'
+    ss.framework = 'UIKit'
+    end
 end
